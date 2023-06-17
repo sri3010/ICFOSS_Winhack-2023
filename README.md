@@ -1,5 +1,5 @@
-# ICFOSS_Winhack-2023
-Unified Ticket management for Kerela Tourism.
+# Ticket-Management-System-ICFOSS
+Unified Ticket Management System with Parking assisstance. (Hackathon) Created a web-app from scratch for the tourism sector or Kerala where ticketing for the consumers had to be done with ease within a website. IUsed Firebase for backend, HTML, CSS, JS for frontend, Razorpay for the payment gateway. It is hosted in Firebase itself.
 
-Problem Statement:
-The proposed Unified Ticket Management System, is a centralized web and mobile app system that allows the department and its internal stakeholders to generate, manage and track the tickets for various events, activities, and attractions. This includes tasks such as issuing tickets to customers (for multiple activities), tracking tickets and their sales, and managing their availability. The system will also support a parking assistance system in selected destinations as well. The solution can help in improving the efficiency and effectiveness of the department and ensure that tourists (domestic/international) have a positive experience at the destination.
+The uploaded files are a bit messy at the moment, I will make time to organize during my sem break as my exams are on.
+Thanks for visiting- mail me: s.shreenithisaravanan@gmail.com for any queries.

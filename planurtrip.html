@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>keralatourism.org</title>
+<!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link id="pagestyle" rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/more_nav.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+crossorigin=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="crossorigin=""></script>
+
+<link rel="stylesheet" href="navigation/styles.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="navigation/script.js"></script>
+
+<script type="text/javascript">
+    function changesheet(sheet) {
+        document.getElementById('pagestyle').setAttribute('href', sheet); 
+    }
+</script>
+ 
+</head>
+
+<body>
+
+<div class="top-header">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-12 text-md-left text-center leftmy">
+            <ul class="top_nav1">
+              <li><i class="fa fa-calendar"></i> <span id="datedisplay"></span></li>
+              <li><i class="fa fa-clock-o"></i> <span id="clockDisplay"></span></li>
+            </ul>
+         </div>
+         
+         
+         <div class="col-md-8 col-12 text-md-right text-center righthd">
+            <ul class="top_nav">
+             <li><a href="index.html"><i class="fa fa-reply-all"></i> Skip To Main Content</a></li>
+             <li><a href="#"><i class="fa fa-sitemap"></i> Sitemap</a></li>
+             <li class="tbg"><a href="javascript:void(0);" onclick="set_font_size('decrease')">A-</a></li>
+             <li class="tbg"><a href="javascript:void(0);" onclick="set_font_size('')">A </a></li>
+             <li class="tbg"><a href="javascript:void(0);" onclick="set_font_size('increase')">A+</a></li>
+            </ul>
+         </div>
+         
+      </div>
+   </div>
+</div>
+
+
+  <div class="header">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-2 col-2"><a href="#"><img src="images/logokerala.png"  /></a></div>
+         <div class="col-md-4 text-center"><a href="#">
+          <div class="right_box">
+          <p>Kerala Tourism.Org</p>
+          <p>Welcome to God's Own Country</p>
+          </div>
+         </a></div>
+         <div class="col-md-6 h_right text-right">
+            <div class="right_box">
+              <p><i class="fa fa-phone"></i> +91 80566 49528</p>
+              <p><i class="fa fa-envelope"></i> dtpckerala@gmail.com</p>
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div id="myheader" class="main_navigation">
+    <div class="container">
+      <div class="row">
+        <div id='cssmenu'>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="exp kerela.html".>Experience Kerala </a></li>
+                <li><a href="thingstodo.html">Things to Do </a></li>
+                <li><a href="planurtrip.html">Plan your Trip</a></li>
+                <li><a href="news.html">E Brochures & Newsletter </a></li> 
+                <li class='active'><a href="#">Programmes</a>
+                 <ul>
+                <li><a href="#">Travel Desk</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Media Room</a></li>
+                <li><a href="#">How to</a></li>
+                <li><a href="#">Festivals</a></li>
+                <li><a href="#">Media Room</a></li>
+                <li><a href="#">Governmental Affairs</a></li>
+                <li><a href="#">Subscribe</a></li>  
+             </ul>
+            </li>
+            
+             <li><a href="#">Specialities </a>
+              <ul>
+              <li><a href="#">Ayurveda</a></li>
+              <li><a href="#">Monsoon</a></li>
+              <li><a href="#">House Boat</a></li>
+              <li><a href="#">Kerala Food</a></li>
+              <li><a href="#">Festivals</a></li> 
+           </ul>
+          </li>
+             <li><a href="#">Nature</a>
+              <ul>
+                <li><a href="#">Hills</a></li>
+                <li><a href="#">Backwaters</a></li>
+                <li><a href="#">Beach</a></li>
+                <li><a href="#">Wild life</a></li>
+                <li><a href="#">Waterfalls</a></li>
+             </ul>
+            </li>
+             
+             <li><a href="#">Explore</a>
+              <ul>
+                <li><a href="#">Classification Schemes</a></li>
+                <li><a href="#">Governmental Affairs</a></li>
+                <li><a href="#">Media Room</a></li>
+                <li><a href="#">Tourism Events</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </li>   
+           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+   <div class="main_slider">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+  
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+<style>
+  #map { height: 300px; width: 500px; }
+</style>
+</head>
+<body>
+
+<h3>You are at!</h3>
+<div id="map"></div>
+<a href="Parking-Lot/index.html"><button class="button_9">Book your space</button></a>
+<style>
+/* CSS */
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+</style>
+
+</body>
+</html>
+<script>
+  var map = L.map('map');
+  map.setView([51.505, -0.09], 13);
+  
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+  
+  navigator.geolocation.watchPosition(success,Error);
+  let marker,circle;
+  function success(pos)
+  {
+      const lat=pos.coords.latitude;
+      const lng=pos.coords.longitude;
+      const accuracy=pos.coords.accuracy;
+      if (marker)
+      {
+          map.removeLayer(marker);
+          map.removeLayer(circle);
+      }
+      marker =L.marker([lat,lng]).addTo(map);
+      circle=L.circle([lat,lng],{radius:accuracy}).addTo(map);
+      map.fitBounds(circle.getBounds());
+  }
+  function onMapClick(e) {
+      alert("You clicked the map at " + e.latlng);
+  }
+  map.on('click', onMapClick);
+  if (!zoomed)
+  {
+      zoomed = map.fitBounds(circle.getBounds())
+  }
+  map.setView([lat,lng]);
+  function error(err)
+  {
+      if(err.code===1)
+      {
+          alert("please allow geolocation access");
+      }
+      else{
+          alert("connot get current location");
+      }
+  }
+  </script>
+   <footer>
+    <div class="container">
+      <div class="row">
+  
+  
+        <div class="col-md-3">
+          <div class="widget">
+            <h5 class="widgetheading">Stay on Social Media</h5>
+            <ul class="link-list">
+              <li><a href="#."><i class="fa fa-facebook icred"></i> Facebook</a></li>
+              <li><a href="#."><i class="fa fa-twitter icred"></i> Twitter</a></li>
+              <li><a href="#."><i class="fa fa-linkedin icred"></i> LinkedIn</a></li>
+              <li><a href="#."><i class="fa fa-youtube icred"></i> Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <div class="widget">
+            <h5 class="widgetheading">Quick Links</h5>
+            <ul class="link-list">
+             <li><a href="#"><i class="fa fa-chevron-right icred"></i> Login</a></li>
+             <li><a href="#"><i class="fa fa-chevron-right icred"></i> Specialities</a></li>
+             <li><a href="#"><i class="fa fa-chevron-right icred"></i> Videos and Photos</a></li>
+             <li><a href="#"><i class="fa fa-chevron-right icred"></i> Traavel Hub</a></li>
+  
+            </ul>
+          </div>
+        </div>
+  
+         <div class="col-md-2">
+          <div class="widget">
+            <h5 class="widgetheading">Address</h5>
+            <ul class="link-list">
+             <li><a href="#"><i class="fa fa-map-marker icred"></i> District Programme Management Unit (SPMU) District tourism programme (DTP) Vishal Complex, 19-A, Vidhan Sabha Marg, Kerala-736001</a></li>
+             
+            </ul>
+          </div>
+        </div>
+  
+        <div class="col-md-2">
+          <div class="widget">
+            <h5 class="widgetheading">Contact Us</h5>
+              <ul class="link-list">
+               <li><a href="#"><i class="fa fa-phone icred"></i> 0522-2237498</a></li>
+         <li><a href="#"><i class="fa fa-envelope icred"></i> mdupnrhm@gmail.com</a></li>
+         <li><a href="#"><i class="fa fa-envelope icred"></i> info@upnrhm.gov.in</a></li>
+               <li><a href="#"><i class="fa fa-envelope icred"></i> info@upnrhm.gov.in</a></li>
+           </ul>
+            <div class="clear">
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-3">
+          <div class="widget">
+            <h5 class="widgetheading">Find Us</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4016687.249738563!2d73.8938584205214!3d10.536367940478913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0812ffd49cf55b%3A0x64bd90fbed387c99!2sKerala!5e0!3m2!1sen!2sin!4v1678593537187!5m2!1sen!2sin" 
+            width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+    <div id="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="copyright">
+              <p>
+                <span>Copyright © 2019, DTPC tourism programme,Kerala.</span>
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-md-3">
+             <div class="credits">
+                Designed by <a href="http://www.schauhan.in">Srinidhi.IN</a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="js/main.js"></script>
+<script src="js/font.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

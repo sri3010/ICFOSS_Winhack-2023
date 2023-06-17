@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="form_style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase</title>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+            integrity=
+    "sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+            crossorigin="anonymous">
+        </script>
+</head>
+<body>
+    <form id="ticket" class="form-control" enctype="text/plain">
+        <p>
+            Fullname: <input type="text" name="fullname" id="fullname" required />
+        </p>
+        <p>
+            Email: <input type="email" name="email" id="email" required />
+        </p>
+        <p>
+            Age: <input type="text" name="age" id="age" />
+        </p>
+        <label for="subject">
+            Select Slots:
+        </label>
+        <select class="form-control"
+            id="subject" name="subject">
+            <option value="Concert">
+                10am - 12pm
+            </option>
+            <option value="sanctuary">
+                1pm - 3pm
+            </option>
+            <option value="Drama">
+                5pm - 7pm
+            </option>
+        </select>
+
+        <button type="button"><a href="thea.html">Select Seats</a></button>
+    </form>    
+    </body>
+</html>

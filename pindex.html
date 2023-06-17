@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="bootstrap.min1.css">
+    <title>Parking Lot</title>
+</head>
+
+<body style="background-color:lightblue;">
+    <header class="shadow">
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="ml-5 align-self-center">Parking Lot</div>
+        </div>
+    </header>
+    <div class="form-container mt-5">
+        <form class="w-50 mx-auto" id="frmContact">
+            <h5 class="text-center">Add Car to Parking Lot</h5>
+            <div class="form-group">
+                <label for="owner">Owner:</label>
+                <input name="owner" type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Owner">
+            </div>
+            <div class="form-group">
+                <label for="car">Car:</label>
+                <input name="car" type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Car">
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate:</label>
+                <input name="licensePlate" type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="NN-NN-LL,NN-LL-NN,....etc">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="entryDate">Entry Date:</label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="entryDate">
+                </div>
+                <div class="col-6">
+                    <label for="exitDate">Exit Date:</label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="exitDate">
+                </div>
+            </div>
+            
+        
+        <div class="seatStructure">
+            <center>
+              <p id="notification" />
+              <table id="seatsBlock" style="margin-left: 15%;">
+                <tr>
+                  <td colspan="14">
+                    <div
+                      class="screen" style="height: max-content;"
+                    >
+                        Slots
+                    </div>
+                  </td>
+        
+                  <br />
+                </tr>
+                <tr>
+                  <td />
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td />
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>A</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A1" id="A1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A2" id="A2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A3" id="A3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A4" id="A4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A5" id="A5" />
+                  </td>
+                  <td class="seatGap"/>
+                  <td>
+                    <input type="checkbox" class="seats" value="A6" id="A6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A7" id="A7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A8" id="A8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A9" id="A9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A10" id="A10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A11" id="A11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="A12" id="A12" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B1" id="B1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B2" id="B2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B3" id="B3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B4" id="B4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B5" id="B5" />
+                  </td>
+                  <td />
+                  <td>
+                    <input type="checkbox" class="seats" value="B6" id="B6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B7" id="B7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B8" id="B8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B9" id="B9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B10" id="B10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B11" id="B11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="B12" id="B12" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C1" id="C1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C2" id="C2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C3" id="C3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C4" id="C4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C5" id="C5" />
+                  </td>
+                  <td />
+                  <td>
+                    <input type="checkbox" class="seats" value="C6" id="C6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C7" id="C7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C8" id="C8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C9" id="C9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C10" id="C10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C11" id="C11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="C12" id="C12" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>D</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D1" id="D1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D2" id="D2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D3" id="D3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D4" id="D4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D5" id="D5" />
+                  </td>
+                  <td />
+                  <td>
+                    <input type="checkbox" class="seats" value="D6" id="D6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D7" id="D7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D8" id="D8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D9" id="D9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D10" id="D10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D11" id="D11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="D12" id="D12" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>E</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E1" id="E1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E2" id="E2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E3" id="E3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E4" id="E4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E5" id="E5" />
+                  </td>
+                  <td />
+                  <td>
+                    <input type="checkbox" class="seats" value="E6" id="E6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E7" id="E7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E8" id="E8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E9" id="E9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E10" id="E10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E11" id="E11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="E12" id="E12" />
+                  </td>
+                </tr>
+                <tr class="seatVGap" />
+                <tr>
+                  <td>F</td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F1" id="F1" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F2" id="F2" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F3" id="F3" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F4" id="F4" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F5" id="F5" />
+                  </td>
+                  <td />
+                  <td>
+                    <input type="checkbox" class="seats" value="F6" id="F6" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F7" id="F7" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F8" id="F8" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F9" id="F9" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F10" id="F10" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F11" id="F11" />
+                  </td>
+                  <td>
+                    <input type="checkbox" class="seats" value="F12" id="F12" />
+                  </td>
+                </tr>
+              </table>
+    </div>
+    <button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Add Car</button>
+  </form>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+        import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-database.js";
+         
+        // Paste the code from Firebase
+// Paste the code from Firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyCrAikf9aSz9tieATN8W-NYbCmKG2bv3nk",
+  authDomain: "kerala-tourism-baccb.firebaseapp.com",
+  databaseURL: "https://kerala-tourism-baccb-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "kerala-tourism-baccb",
+  storageBucket: "kerala-tourism-baccb.appspot.com",
+  messagingSenderId: "321452920155",
+  appId: "1:321452920155:web:740d8d0802cab68527de7e",
+  measurementId: "G-62HRN6H9GH"
+};
+ 
+         
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+         
+        // Get a reference to the database service
+        const db = getDatabase(app);
+         
+        document.getElementById('frmContact').addEventListener('submit', function(e) {
+            e.preventDefault();
+            set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
+                owner: document.getElementById('owner').value,
+                car: document.getElementById('car').value,
+                licensePlate: document.getElementById('licensePlate').value,
+                
+            });
+         
+            alert('Your form is submitted');
+            document.getElementById('frmContact').reset();
+        });
+       </script>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+    <h5 class="text-center mb-3">List of Cars in Parking Lot</h5>
+    <input type="text" class="w-100 mb-3" id="searchInput" placeholder="Search...">
+    <table class="table table-striped shadow " id="parkingTable">
+            <thead class="text-white" id="tableHead">
+              <tr>
+                <th scope="col">Owner</th>
+                <th scope="col">Car</th>
+                <th scope="col">License Plate</th>
+                <th scope="col">Entry Date</th>
+                <th scope="col">Exit Date</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody">
+             
+            </tbody>
+          </table> 
+    <script src="bootstrap.min.js"></script>
+    <script src="core.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Ticket</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		table {
+			border-collapse: collapse;
+			margin: 20px auto;
+		}
+		td, th {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		button {
+			margin-top: 20px;
+			padding: 10px 20px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Train Ticket</h1>
+	<table>
+		<tr>
+			<th>From</th>
+			<td id="from"></td>
+		</tr>
+		<tr>
+			<th>To</th>
+			<td id="to"></td>
+		</tr>
+		<tr>
+      <th>Date:</th>
+      <td><input type="date" id="date" min="${getCurrentDate()}" required></td>
+    </tr>
+		<tr>
+			<th>Train Number</th>
+			<td id="trainNumber"></td>
+		</tr>
+		<tr>
+      <th>Departure time:</th>
+      <td>
+        <select id="departureTime">
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+        </select>
+      </td>
+    </tr>
+		<tr>
+			<th>Arrival Time</th>
+			<td>
+        <select id="arrivalTime">
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+          <option value="6:00 PM">6:00 PM</option>
+        </select>
+      </td>
+		</tr>
+		<tr>
+			<th>Seat Number</th>
+			<td id="seatNumber"></td>
+		</tr>
+		<tr>
+			<th>Status</th>
+			<td id="status">Not checked in</td>
+		</tr>
+	</table>
+
+	<button id="checkInButton">Pay In</button>
+
+	<form id="checkInForm" class="hidden">
+		<label for="passengerName">Passenger Name:</label>
+		<input type="text" id="passengerName">
+		<br>
+		<label for="passengerEmail">Passenger Email:</label>
+		<input type="email" id="passengerEmail">
+		<br>
+		<button type="submit">Submit</button>
+	</form>
+  <!-- <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("date").min;
+      document.getElementById("demo").innerHTML = x;
+    }
+    </script> -->
+
+	<script src="ticket-generator.js"></script>
+</body>
+</html>
